@@ -1,0 +1,18 @@
+// OpenHiragana - Hiragana quiz game for VC++6/MFC
+#define APSTUDIO_READONLY_PRAGMA 0
+#define IDD_OPEN_HIRAGANA_DIALOG 101
+#define IDI_APP                   100
+#define IDC_HIRAGANA_STATIC 1001
+#define IDC_SCORE_STATIC 1002
+#define IDC_ROUND_STATIC 1003
+#define IDC_OPTION1 1004
+#define IDC_OPTION2 1005
+#define IDC_OPTION3 1006
+#define IDC_OPTION4 1007
+#define IDC_NEXT_BUTTON 1008
+#define IDC_INFO_STATIC 1009
+#define IDC_TIMER 1010
+#define IDC_STATIC -1
+#ifdef APSTUDIO
+#undef APSTUDIO_READONLY_PRAGMA
+#endif
