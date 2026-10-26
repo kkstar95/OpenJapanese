@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <vector>
+#include "resource.h"
 
 // --- Game State ---
 int g_score = 0;
@@ -469,12 +470,27 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
     g_hBrushWindowBg = CreateSolidBrush(RGB(20, 20, 20));
 
-    // --- Load Custom Icon from File ---
-    HICON hLargeIcon = (HICON)LoadImageW(NULL, L"Hiragana.ico", IMAGE_ICON, 32, 32, LR_LOADFROMFILE);
-    HICON hSmallIcon = (HICON)LoadImageW(NULL, L"Hiragana.ico", IMAGE_ICON, 16, 16, LR_LOADFROMFILE);
-    
-    if (!hLargeIcon) hLargeIcon = LoadIcon(NULL, IDI_APPLICATION);
-    if (!hSmallIcon) hSmallIcon = LoadIcon(NULL, IDI_APPLICATION);
+// Load icons embedded in the EXE
+HICON hLargeIcon = LoadIcon(
+    hInstance,
+    MAKEINTRESOURCE(IDI_APP)
+);
+
+HICON hSmallIcon = (HICON)LoadImage(
+    hInstance,
+    MAKEINTRESOURCE(IDI_APP),
+    IMAGE_ICON,
+    16,
+    16,
+    LR_DEFAULTCOLOR
+);
+
+// Fallback if resource loading fails
+if (hLargeIcon == NULL)
+    hLargeIcon = LoadIcon(NULL, IDI_APPLICATION);
+
+if (hSmallIcon == NULL)
+    hSmallIcon = LoadIcon(NULL, IDI_APPLICATION);
 
     WNDCLASSEXW wcex;
     wcex.cbSize = sizeof(WNDCLASSEXW);

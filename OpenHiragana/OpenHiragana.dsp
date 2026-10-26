@@ -59,6 +59,10 @@ LINK32=link.exe
 
 SOURCE=.\main.cpp
 # End Source File
+# Begin Source File
+
+SOURCE=.\OpenHiragana.rc
+# End Source File
 # End Group
 # Begin Group "Header Files"
 
@@ -71,6 +75,10 @@ SOURCE=.\resource.h
 # Begin Group "Resource Files"
 
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\Res\Hiragana.ico
+# End Source File
 # End Group
 # End Target
 # End Project
