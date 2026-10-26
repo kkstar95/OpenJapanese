@@ -1,7 +1,7 @@
 <div align="right">
-  <img src="https://raw.githubusercontent.com/kkstar95/OpenJapanese/refs/heads/main/Images/Hiragana.PNG" alt="Hiragana" width="300">
-  <img src="https://raw.githubusercontent.com/kkstar95/OpenJapanese/refs/heads/main/Images/Katakana.PNG" alt="Katakana" width="300">
-  <img src="https://raw.githubusercontent.com/kkstar95/OpenJapanese/refs/heads/main/Images/Kanji.PNG" alt="Kanji" width="300">
+  <img src="https://raw.githubusercontent.com/kkstar95/OpenJapanese/refs/heads/main/Images/Hiragana.PNG" alt="Hiragana" width="200">
+  <img src="https://raw.githubusercontent.com/kkstar95/OpenJapanese/refs/heads/main/Images/Katakana.PNG" alt="Katakana" width="200">
+  <img src="https://raw.githubusercontent.com/kkstar95/OpenJapanese/refs/heads/main/Images/Kanji.PNG" alt="Kanji" width="200">
 </div>
 
 # OpenJapanese (Open Source Japanese Language Learning Tools)
