@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/kkstar95/OpenJapanese/refs/heads/main/Images/Hiragana.PNG" alt="description" width="800"> 
 
-# OpenJapanese - Open Source Tools For Learning Japanese
+# OpenJapanese (Open Source Japanese Language Learning Tools)
 
 I was annoyed you don't have too many 100% FREE options when it comes to starting Japanese so i decide to build one myself.
 
